@@ -108,7 +108,7 @@ Consumer dev reviews the auto-PR, resolves any `.rej` files, merges.
 
 ### 3.1 Auth for cross-repo template fetch
 
-The cron uses `secrets.RL3_TEMPLATES_PULL_TOKEN || secrets.GITHUB_TOKEN`. If `rl3-templates` is in the same org as the consumer, the default `GITHUB_TOKEN` works. Otherwise add a fine-grained PAT named `RL3_TEMPLATES_PULL_TOKEN` with `contents: read` on `rl3aiboutique-cpu/rl3-templates`.
+The cron uses `secrets.RL3_TEMPLATES_PULL_TOKEN || secrets.GITHUB_TOKEN`. If `rl3-templates` is in the same org as the consumer, the default `GITHUB_TOKEN` works. Otherwise add a fine-grained PAT named `RL3_TEMPLATES_PULL_TOKEN` with `contents: read` on `RL3-AI-AGENCY/rl3-templates`.
 
 ## 4. Consumer sync flow — manual
 
@@ -251,7 +251,7 @@ Iterate on rc tags until the consumer renders cleanly. Then drop the rc tag and 
 
 If a consumer team discovers a useful pattern (e.g. a missing hook, a tighter rule), the upstream-flow is:
 
-1. Consumer team opens an issue in `rl3aiboutique-cpu/rl3-templates` describing the pattern.
+1. Consumer team opens an issue in `RL3-AI-AGENCY/rl3-templates` describing the pattern.
 2. Maintainer (`@lehidalgo` or `@novasvilla`) reviews.
 3. Maintainer authors the change per §2 above. Consumer-team can also open a PR directly.
 4. After merge + tag, the auto-sync brings it to every consumer (including the one that requested it).

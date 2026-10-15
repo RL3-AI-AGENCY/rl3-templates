@@ -207,12 +207,12 @@ Inaugural Phase 2A retrofit sweep on six consumer repos. Each used `copier copy 
 
 | Repo | PR | Outcome |
 |---|---|---|
-| `rl3-ci` | [#12](https://github.com/rl3aiboutique-cpu/rl3-ci/pull/12) | MERGED — lib mode (enable_branch_policy=false) |
-| `rl3-website` | [#77](https://github.com/rl3aiboutique-cpu/rl3-website/pull/77) | CLOSED — head out of date; needs rebase |
-| `devloop` | [#1](https://github.com/rl3aiboutique-cpu/devloop/pull/1) | MERGED — first push to new GitHub remote |
-| `rl3-infra-vps` | [#32](https://github.com/rl3aiboutique-cpu/rl3-infra-vps/pull/32) | MERGED — infra mode (terraform + ansible flags) |
-| `sapphira-clinic` | [#16](https://github.com/rl3aiboutique-cpu/sapphira-clinic/pull/16) | MERGED — fullstack |
-| `capellai-ai-crm` | [#31](https://github.com/rl3aiboutique-cpu/capellai-ai-crm/pull/31) | MERGED — fullstack |
+| `rl3-ci` | [#12](https://github.com/RL3-AI-AGENCY/rl3-ci/pull/12) | MERGED — lib mode (enable_branch_policy=false) |
+| `rl3-website` | [#77](https://github.com/RL3-AI-AGENCY/rl3-website/pull/77) | CLOSED — head out of date; needs rebase |
+| `devloop` | [#1](https://github.com/RL3-AI-AGENCY/devloop/pull/1) | MERGED — first push to new GitHub remote |
+| `rl3-infra-vps` | [#32](https://github.com/RL3-AI-AGENCY/rl3-infra-vps/pull/32) | MERGED — infra mode (terraform + ansible flags) |
+| `sapphira-clinic` | [#16](https://github.com/RL3-AI-AGENCY/sapphira-clinic/pull/16) | MERGED — fullstack |
+| `capellai-ai-crm` | [#31](https://github.com/RL3-AI-AGENCY/capellai-ai-crm/pull/31) | MERGED — fullstack |
 
 Bootstrap commits used `--no-verify` (one-off; pre-commit hook envs install on first run). All retrofits preserve any pre-existing `.pre-commit-config.yaml` as `*.PREVIOUS-<NAME>` for review. Existing `CLAUDE.md` content was overwritten in three repos (capellai, rl3-website, rl3-infra-vps) — re-add via `## Project-specific notes` section below the managed-content marker.
 

@@ -5,7 +5,7 @@
 # Phase 2 / Phase 3, gated by future flags.
 #
 # Consumer usage:
-#   copier copy gh:rl3aiboutique-cpu/rl3-templates ./my-new-repo
+#   copier copy gh:RL3-AI-AGENCY/rl3-templates ./my-new-repo
 #
 # Refresh existing project:
 #   copier update

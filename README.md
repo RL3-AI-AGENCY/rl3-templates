@@ -31,7 +31,7 @@ Project templates for RL3 AI Agency repositories. Built on [Copier](https://copi
 
 ```mermaid
 graph TD
-    A[copier copy gh:rl3aiboutique-cpu/rl3-templates] --> B[baseline/ rendered into target repo]
+    A[copier copy gh:RL3-AI-AGENCY/rl3-templates] --> B[baseline/ rendered into target repo]
     B --> C1[".pre-commit-config.yaml<br/>7 blocks, conditionally rendered"]
     B --> C2[".claude/settings.json<br/>deny / allow + Pre/PostToolUse hooks"]
     B --> C3["CLAUDE.md<br/>agent contract with managed markers"]
@@ -96,11 +96,11 @@ sequenceDiagram
     autonumber
     participant Dev
     participant Copier
-    participant GH as github.com/rl3aiboutique-cpu/rl3-templates
+    participant GH as github.com/RL3-AI-AGENCY/rl3-templates
     participant Repo as target repo
 
     Note over Dev,Repo: Initial copy
-    Dev->>Copier: copier copy gh:rl3aiboutique-cpu/rl3-templates ./my-repo
+    Dev->>Copier: copier copy gh:RL3-AI-AGENCY/rl3-templates ./my-repo
     Copier->>GH: clone @ default branch (main, latest tag = v0.4.0)
     GH-->>Copier: baseline/ tree + copier.yml
     Copier->>Dev: prompt for project_slug, has_python, has_typescript, ...
@@ -164,7 +164,7 @@ The full policy — including the hotfix flow and emergency-override rules — i
 ### New repo
 
 ```bash
-copier copy gh:rl3aiboutique-cpu/rl3-templates ./my-new-repo
+copier copy gh:RL3-AI-AGENCY/rl3-templates ./my-new-repo
 cd my-new-repo
 git init && git add -A && git commit -m "chore: initial commit from rl3-templates"
 uv tool install pre-commit
